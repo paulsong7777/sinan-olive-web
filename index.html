@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>홈 — 사회적협동조합 신안올리브협회</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2335422A'/%3E%3Cpath d='M20 44 Q30 34 34 26 T46 14' stroke='%23F5F3E8' stroke-width='3' fill='none'/%3E%3Cellipse cx='36' cy='30' rx='6' ry='8' fill='%23C2A14D'/%3E%3C/svg%3E">
+<meta name="description" content="1004섬 신안에서 지역 주민과 함께 지속가능한 올리브 농산업을 가꾸는 사회적협동조합 신안올리브협회입니다.">
+<meta property="og:title" content="사회적협동조합 신안올리브협회">
+<meta property="og:description" content="신의 선물, 천사의 선물 — 신안 올리브. 창립총회 2026. 8. 29.">
+<meta property="og:image" content="https://sinan-olive.org/images/hero.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{--olive-deep:#35422A;--olive-leaf:#8E9C7C;--olive-mist:#F3F4EC;--olive-fruit:#443A4E;--oil-gold:#C2A14D;--ink:#22281C;--paper:#FFF;--serif:'Gowun Batang',serif;--sans:'Pretendard',-apple-system,sans-serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  body{font-family:var(--sans);color:var(--ink);background:var(--olive-mist);line-height:1.7;font-size:16px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  nav{position:sticky;top:0;background:rgba(243,244,236,.93);backdrop-filter:blur(8px);border-bottom:1px solid rgba(53,66,42,.14);z-index:50}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .logo{font-family:var(--serif);font-weight:700;font-size:1.02rem;color:var(--olive-deep)}
+  .logo small{display:block;font-family:var(--sans);font-weight:400;font-size:.6rem;letter-spacing:.22em;color:var(--olive-leaf)}
+  .menu{display:flex;gap:22px;font-size:.87rem;font-weight:500}
+  .menu a{opacity:.82;padding:6px 0;border-bottom:2px solid transparent}
+  .menu a:hover,.menu a:focus-visible{border-bottom-color:var(--oil-gold);opacity:1;outline:none}
+  .menu a.on{border-bottom-color:var(--oil-gold);opacity:1;font-weight:700;color:var(--olive-deep)}
+  @media(max-width:860px){.menu{gap:14px;font-size:.78rem}}
+  @media(max-width:640px){.menu{display:none}}
+  .pagehead{background:linear-gradient(168deg,var(--olive-deep),#4A5A38);color:#F5F3E8;padding:58px 0 52px}
+  .pagehead .sec-label{color:#C4CEAF}
+  .pagehead h1{font-family:var(--serif);font-size:clamp(1.6rem,3.6vw,2.4rem);letter-spacing:-.01em}
+  section{padding:64px 0}
+  .sec-label{font-size:.74rem;letter-spacing:.3em;color:var(--olive-leaf);font-weight:600;margin-bottom:12px}
+  h2{font-family:var(--serif);font-size:clamp(1.3rem,2.6vw,1.8rem);color:var(--olive-deep);margin-bottom:24px}
+  p.body{font-size:.96rem;color:#414A36;margin-bottom:16px;max-width:46em}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:820px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--paper);border-top:3px solid var(--olive-leaf);padding:28px 24px}
+  .card:nth-child(2){border-top-color:var(--oil-gold)}
+  .card:nth-child(3){border-top-color:var(--olive-fruit)}
+  .card h3{font-family:var(--serif);font-size:1.08rem;color:var(--olive-deep);margin-bottom:10px}
+  .card p{font-size:.9rem;color:#4C5342}
+  .quote-band{background:var(--olive-deep);color:#EFEFE2;padding:64px 0}
+  .quote-band .sec-label{color:#AEBB97}
+  .quote-band blockquote{font-family:var(--serif);font-size:clamp(1.05rem,2.2vw,1.4rem);line-height:1.9;max-width:44em}
+  .quote-band cite{display:block;margin-top:18px;font-style:normal;font-size:.8rem;font-family:var(--sans);color:#B9C4A4}
+  .timeline{border-left:2px solid var(--olive-leaf);padding-left:30px;max-width:640px}
+  .tl{position:relative;padding-bottom:28px}
+  .tl::before{content:'';position:absolute;left:-37px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--oil-gold);border:2px solid var(--olive-mist)}
+  .tl .yr{font-family:var(--serif);font-weight:700;color:var(--olive-deep)}
+  .tl p{font-size:.92rem;color:#4C5342}
+  .list{background:var(--paper);border:1px solid rgba(53,66,42,.12)}
+  .list a,.list div.row{display:flex;justify-content:space-between;gap:16px;padding:17px 22px;border-bottom:1px solid rgba(53,66,42,.09);font-size:.93rem}
+  .list a:last-child,.list div.row:last-child{border-bottom:none}
+  .list a:hover{background:#FAFAF3}
+  .date{color:#8A9179;font-size:.83rem;white-space:nowrap}
+  .badge{display:inline-block;background:var(--olive-fruit);color:#fff;font-size:.66rem;font-weight:700;padding:2px 8px;border-radius:2px;margin-right:10px;vertical-align:1px}
+  .article{background:var(--paper);border:1px solid rgba(53,66,42,.12);padding:40px 36px;max-width:760px}
+  .article h3{font-family:var(--serif);color:var(--olive-deep);font-size:1.25rem;margin-bottom:6px}
+  .article .meta{font-size:.8rem;color:#8A9179;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid rgba(53,66,42,.1)}
+  .article ol{margin:14px 0 14px 20px;font-size:.94rem;color:#414A36}
+  .article ol li{margin-bottom:8px}
+  .cta{display:inline-block;background:var(--oil-gold);color:#2A2410;font-weight:700;font-size:.9rem;padding:12px 26px;border-radius:2px;margin-top:8px}
+  .cta:hover{background:#D4B45E}
+  .textlink{color:var(--olive-deep);font-weight:700;font-size:.9rem;border-bottom:2px solid var(--oil-gold)}
+  .form{background:var(--paper);border:1px solid rgba(53,66,42,.12);padding:34px 30px;max-width:560px}
+  .form label{display:block;font-size:.84rem;font-weight:600;color:var(--olive-deep);margin:16px 0 6px}
+  .form input,.form textarea{width:100%;border:1px solid rgba(53,66,42,.25);padding:11px 12px;font-family:var(--sans);font-size:.92rem;background:#FCFCF8;border-radius:2px}
+  .form textarea{min-height:120px}
+  .org{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:760px}
+  @media(max-width:820px){.org{grid-template-columns:1fr}}
+  .org .box{background:var(--paper);border:1px solid rgba(53,66,42,.14);padding:22px;text-align:center}
+  .org .box b{font-family:var(--serif);color:var(--olive-deep);display:block;margin-bottom:4px}
+  .org .box span{font-size:.83rem;color:#8A9179}
+  footer{background:#242B1B;color:#B9BFAA;padding:46px 0;font-size:.85rem}
+  footer .logo{color:#E8E9DC;margin-bottom:12px}
+  footer p{margin-top:3px}
+  .popup-veil{position:fixed;inset:0;background:rgba(24,28,17,.55);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}
+  .popup{background:var(--paper);max-width:430px;width:100%;border-top:5px solid var(--oil-gold);padding:34px 30px 22px;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+  .popup h3{font-family:var(--serif);font-size:1.25rem;color:var(--olive-deep);line-height:1.5;margin:6px 0 14px}
+  .popup dl{font-size:.9rem;margin-bottom:16px}
+  .popup dt{font-weight:700;color:var(--olive-deep);float:left;width:48px}
+  .popup dd{margin-left:58px;margin-bottom:6px}
+  .popup .foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(53,66,42,.14);padding-top:12px;font-size:.8rem;color:#777}
+  .popup button{background:var(--olive-deep);color:#fff;border:none;padding:8px 18px;font-size:.84rem;font-weight:600;cursor:pointer;border-radius:2px}
+  .hidden{display:none}
+  .hero{background:linear-gradient(168deg,rgba(38,48,28,.82) 0%,rgba(58,72,44,.72) 100%),url('images/hero.jpg') center/cover no-repeat;color:#F5F3E8;position:relative;overflow:hidden}
+  .hero-in{padding:92px 0 104px;position:relative;z-index:2}
+  .hero .eyebrow{font-size:.78rem;letter-spacing:.34em;color:#CBD3B8;margin-bottom:20px}
+  .hero h1{font-family:var(--serif);font-size:clamp(2rem,5.2vw,3.3rem);line-height:1.35}
+  .hero h1 .gold{color:#E3C87A}
+  .hero p{margin-top:24px;max-width:34em;color:#DFE3D0}
+  .branch{position:absolute;right:-40px;bottom:-30px;width:min(52vw,540px);opacity:.14;z-index:1}
+  .cardimg{width:calc(100% + 48px);margin:-28px -24px 16px;height:170px;object-fit:cover;display:block}
+  .photoband{position:relative;margin-top:0}
+  .photoband img{width:100%;height:min(56vw,440px);object-fit:cover;display:block}
+  .photoband .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(24,28,17,.72));color:#EDEFE2;padding:38px 26px 16px;font-size:.85rem}
+  figure.ph{margin:26px 0 8px;max-width:760px}
+  figure.ph img{width:100%;display:block;border:1px solid rgba(53,66,42,.15)}
+  figure.ph figcaption{font-size:.8rem;color:#8A9179;margin-top:8px}
+</style></head><body>
+<div class="popup-veil" id="popup"><div class="popup" role="dialog">
+<div class="sec-label" style="color:var(--olive-fruit)">NOTICE</div>
+<h3>사회적협동조합 신안올리브협회<br>창립총회 개최 공고</h3>
+<dl><dt>일시</dt><dd>2026. 8. 29.(토) 오후 2시</dd><dt>장소</dt><dd>전라남도 목포시 연산백련로1번길 112-1, 1층</dd><dt>안건</dt><dd>정관 확정 · 사업계획 및 예산 확정 · 임원 선출 · 설립 경비 등</dd></dl>
+<p style="font-size:.86rem;color:#4C5342;margin-bottom:14px">설립에 참여하실 분은 빠짐없이 참여해 주시기 바랍니다.<br><span style="color:#8A9179;font-size:.78rem">2026. 8. 18. 발기인 대표 김태헌</span></p>
+<div class="foot"><label><input type="checkbox"> 오늘 하루 보지 않기</label><button onclick="document.getElementById('popup').classList.add('hidden')">닫기</button></div>
+</div></div><nav><div class="wrap nav-in"><a class="logo" href="index.html">신안올리브협회<small>SINAN OLIVE ASSOCIATION</small></a><div class="menu"><a href="about.html">협회소개</a><a href="people.html">함께하는 사람들</a><a href="resource.html">자료실</a><a href="notice.html">공지사항</a><a href="story.html">올리브이야기</a><a href="contact.html">Contacts</a></div></div></nav>
+
+<header class="hero"><svg class="branch" viewBox="0 0 400 300" fill="none" stroke="#F5F3E8" stroke-width="2" aria-hidden="true"><path d="M20 280 Q120 200 200 150 T380 40" stroke-width="3"/><path d="M120 212 q-30 -34 -14 -62 q34 10 14 62z"/><path d="M170 178 q6 -46 36 -56 q12 34 -36 56z"/><path d="M240 132 q-28 -30 -14 -58 q32 10 14 58z"/><path d="M290 104 q6 -42 34 -52 q10 32 -34 52z"/><ellipse cx="205" cy="165" rx="13" ry="16" fill="#F5F3E8" opacity=".7"/><ellipse cx="330" cy="80" rx="12" ry="15" fill="#F5F3E8" opacity=".55"/></svg>
+<div class="wrap hero-in">
+<div class="eyebrow">1004개의 섬, 천사의 섬 신안에서</div>
+<h1>신의 선물,<br><span class="gold">천사의 선물</span> — 신안 올리브</h1>
+<p>사회적협동조합 신안올리브협회는 신안의 햇살과 바닷바람이 키운 올리브로, 지역 주민과 함께 지속가능한 올리브 농산업의 내일을 가꿉니다.</p>
+<a class="cta" href="notice.html">창립총회 안내 보기</a>
+</div></header>
+<section><div class="wrap">
+<div class="sec-label">ABOUT US</div><h2>협회가 하는 일</h2>
+<div class="cards">
+<div class="card"><img class="cardimg" src="images/greenhouse.jpg" alt="신안 올리브 재배시설"><h3>올리브 농업 확산</h3><p>묘목 보급과 재배기술 교육, 생산자 조직화로 신안을 한국 올리브 농업의 중심으로 가꿉니다.</p></div>
+<div class="card"><img class="cardimg" src="images/hero.jpg" alt="신안 올리브 과수원"><h3>가공과 연구개발</h3><p>올리브 오일, 절임, 잎차 등 가공식품을 연구·개발하여 부가가치를 만듭니다.</p></div>
+<div class="card"><img class="cardimg" src="images/school.jpg" alt="올리브학교 건물"><h3>교육과 체험</h3><p>올리브학교와 6차산업 체험 프로그램으로 사람을 키우고 지역과 나눕니다.</p></div>
+</div>
+<p style="margin-top:26px"><a class="textlink" href="about.html">협회소개 자세히 보기 →</a></p>
+</div></section>
+<div class="photoband"><img src="images/farm_aerial.jpg" alt="신안군 신의면 협회 농장 전경"><div class="cap">전남 신안군 신의면 — 협회 농장 전경</div></div>
+<div class="quote-band"><div class="wrap">
+<div class="sec-label">우리의 목적</div>
+<blockquote>"지역 주민의 참여와 상생 협력, 자주적·자립적·자치적인 조합 활동을 통하여 지속가능한 올리브 농산업 모델을 조성·확산하고, 자립적인 지역경제 균형발전과 건전한 지역 공동체 구축에 기여한다."<cite>— 정관 제2조</cite></blockquote>
+</div></div>
+<section><div class="wrap">
+<div class="sec-label">NOTICE</div><h2>최근 소식</h2>
+<div class="list">
+<a href="notice.html"><span><span class="badge">공고</span>창립총회 개최 공고</span><span class="date">2026. 8. 18.</span></a>
+<a href="notice.html"><span>홈페이지를 열었습니다</span><span class="date">2026. 8. 28.</span></a>
+</div></div></section>
+<footer><div class="wrap">
+<div class="logo">사회적협동조합 신안올리브협회<small>SOCIAL COOPERATIVE SINAN OLIVE ASSOCIATION</small></div>
+<p>전남광주통합특별시 신안군 신의면 안산길 100-15 (상태서리 268)</p>
+<p>대표자 김태헌 · 이메일 sinanolive.official@gmail.com</p>
+<p style="margin-top:16px;color:#7E8570">© 2026 Social Cooperative Sinan Olive Association. All rights reserved.</p>
+</div></footer></body></html>
