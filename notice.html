@@ -24,7 +24,7 @@
   .menu a:hover,.menu a:focus-visible{border-bottom-color:var(--oil-gold);opacity:1;outline:none}
   .menu a.on{border-bottom-color:var(--oil-gold);opacity:1;font-weight:700;color:var(--olive-deep)}
   @media(max-width:860px){.menu{gap:14px;font-size:.78rem}}
-  @media(max-width:640px){.nav-in{flex-wrap:wrap;height:auto;padding:10px 0;row-gap:8px}.logo{width:100%}.menu{width:100%;gap:14px;font-size:.8rem;overflow-x:auto;white-space:nowrap;padding-bottom:2px}}
+  .ham{display:none;background:none;border:none;font-size:1.5rem;color:var(--olive-deep);cursor:pointer;padding:4px 8px}@media(max-width:640px){.ham{display:block}.nav-in{flex-wrap:wrap}.menu{display:none;width:100%;flex-direction:column;gap:0;padding:6px 0 10px}.menu.open{display:flex}.menu a{padding:11px 4px;border-bottom:1px solid rgba(53,66,42,.08);font-size:.95rem}}
   .pagehead{background:linear-gradient(168deg,var(--olive-deep),#4A5A38);color:#F5F3E8;padding:58px 0 52px}
   .pagehead .sec-label{color:#C4CEAF}
   .pagehead h1{font-family:var(--serif);font-size:clamp(1.6rem,3.6vw,2.4rem);letter-spacing:-.01em}
@@ -98,7 +98,7 @@
   figure.ph img{width:100%;display:block;border:1px solid rgba(53,66,42,.15)}
   figure.ph figcaption{font-size:.8rem;color:#8A9179;margin-top:8px}
 </style></head><body>
-<nav><div class="wrap nav-in"><a class="logo" href="index.html">신안올리브협회<small>SINAN OLIVE ASSOCIATION</small></a><div class="menu"><a href="about.html">협회소개</a><a href="people.html">함께하는 사람들</a><a href="resource.html">자료실</a><a href="notice.html" class="on">공지사항</a><a href="story.html">올리브이야기</a><a href="contact.html">Contacts</a></div></div></nav>
+<nav><div class="wrap nav-in"><a class="logo" href="index.html">신안올리브협회<small>SINAN OLIVE ASSOCIATION</small></a><button class="ham" aria-label="메뉴 열기" onclick="document.querySelector('.menu').classList.toggle('open')">&#9776;</button><div class="menu"><a href="about.html">협회소개</a><a href="people.html">함께하는 사람들</a><a href="resource.html">자료실</a><a href="notice.html" class="on">공지사항</a><a href="story.html">올리브이야기</a><a href="contact.html">Contacts</a></div></div></nav>
 
 <div class="pagehead"><div class="wrap"><div class="sec-label">NOTICE</div><h1>공지사항</h1></div></div>
 <section><div class="wrap">

@@ -24,7 +24,7 @@
   .menu a:hover,.menu a:focus-visible{border-bottom-color:var(--oil-gold);opacity:1;outline:none}
   .menu a.on{border-bottom-color:var(--oil-gold);opacity:1;font-weight:700;color:var(--olive-deep)}
   @media(max-width:860px){.menu{gap:14px;font-size:.78rem}}
-  @media(max-width:640px){.nav-in{flex-wrap:wrap;height:auto;padding:10px 0;row-gap:8px}.logo{width:100%}.menu{width:100%;gap:14px;font-size:.8rem;overflow-x:auto;white-space:nowrap;padding-bottom:2px}}
+  .ham{display:none;background:none;border:none;font-size:1.5rem;color:var(--olive-deep);cursor:pointer;padding:4px 8px}@media(max-width:640px){.ham{display:block}.nav-in{flex-wrap:wrap}.menu{display:none;width:100%;flex-direction:column;gap:0;padding:6px 0 10px}.menu.open{display:flex}.menu a{padding:11px 4px;border-bottom:1px solid rgba(53,66,42,.08);font-size:.95rem}}
   .pagehead{background:linear-gradient(168deg,var(--olive-deep),#4A5A38);color:#F5F3E8;padding:58px 0 52px}
   .pagehead .sec-label{color:#C4CEAF}
   .pagehead h1{font-family:var(--serif);font-size:clamp(1.6rem,3.6vw,2.4rem);letter-spacing:-.01em}
@@ -104,7 +104,7 @@
 <dl><dt>일시</dt><dd>2026. 8. 29.(토) 오후 2시</dd><dt>장소</dt><dd>전라남도 목포시 연산백련로1번길 112-1, 1층</dd><dt>안건</dt><dd>정관 확정 · 사업계획 및 예산 확정 · 임원 선출 · 설립 경비 등</dd></dl>
 <p style="font-size:.86rem;color:#4C5342;margin-bottom:14px">설립에 참여하실 분은 빠짐없이 참여해 주시기 바랍니다.<br><span style="color:#8A9179;font-size:.78rem">2026. 8. 18. 발기인 대표 김태헌</span></p>
 <div class="foot"><label><input type="checkbox"> 오늘 하루 보지 않기</label><button onclick="document.getElementById('popup').classList.add('hidden')">닫기</button></div>
-</div></div><nav><div class="wrap nav-in"><a class="logo" href="index.html">신안올리브협회<small>SINAN OLIVE ASSOCIATION</small></a><div class="menu"><a href="about.html">협회소개</a><a href="people.html">함께하는 사람들</a><a href="resource.html">자료실</a><a href="notice.html">공지사항</a><a href="story.html">올리브이야기</a><a href="contact.html">Contacts</a></div></div></nav>
+</div></div><nav><div class="wrap nav-in"><a class="logo" href="index.html">신안올리브협회<small>SINAN OLIVE ASSOCIATION</small></a><button class="ham" aria-label="메뉴 열기" onclick="document.querySelector('.menu').classList.toggle('open')">&#9776;</button><div class="menu"><a href="about.html">협회소개</a><a href="people.html">함께하는 사람들</a><a href="resource.html">자료실</a><a href="notice.html">공지사항</a><a href="story.html">올리브이야기</a><a href="contact.html">Contacts</a></div></div></nav>
 
 <header class="hero"><svg class="branch" viewBox="0 0 400 300" fill="none" stroke="#F5F3E8" stroke-width="2" aria-hidden="true"><path d="M20 280 Q120 200 200 150 T380 40" stroke-width="3"/><path d="M120 212 q-30 -34 -14 -62 q34 10 14 62z"/><path d="M170 178 q6 -46 36 -56 q12 34 -36 56z"/><path d="M240 132 q-28 -30 -14 -58 q32 10 14 58z"/><path d="M290 104 q6 -42 34 -52 q10 32 -34 52z"/><ellipse cx="205" cy="165" rx="13" ry="16" fill="#F5F3E8" opacity=".7"/><ellipse cx="330" cy="80" rx="12" ry="15" fill="#F5F3E8" opacity=".55"/></svg>
 <div class="wrap hero-in">
