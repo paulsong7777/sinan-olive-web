@@ -24,7 +24,7 @@
   .menu a:hover,.menu a:focus-visible{border-bottom-color:var(--oil-gold);opacity:1;outline:none}
   .menu a.on{border-bottom-color:var(--oil-gold);opacity:1;font-weight:700;color:var(--olive-deep)}
   @media(max-width:860px){.menu{gap:14px;font-size:.78rem}}
-  @media(max-width:640px){.menu{display:none}}
+  @media(max-width:640px){.nav-in{flex-wrap:wrap;height:auto;padding:10px 0;row-gap:8px}.logo{width:100%}.menu{width:100%;gap:14px;font-size:.8rem;overflow-x:auto;white-space:nowrap;padding-bottom:2px}}
   .pagehead{background:linear-gradient(168deg,var(--olive-deep),#4A5A38);color:#F5F3E8;padding:58px 0 52px}
   .pagehead .sec-label{color:#C4CEAF}
   .pagehead h1{font-family:var(--serif);font-size:clamp(1.6rem,3.6vw,2.4rem);letter-spacing:-.01em}
@@ -104,7 +104,10 @@
 <section><div class="wrap">
 <h2>사무소</h2>
 <p class="body">전남광주통합특별시 신안군 신의면 안산길 100-15 (상태서리 268)<br>대표자 김태헌 · 이메일 sinanolive.official@gmail.com</p>
-<div style="background:#DDE1D0;border:1px solid rgba(53,66,42,.18);height:260px;display:flex;align-items:center;justify-content:center;color:#7E8570;font-size:.9rem;max-width:760px;margin:20px 0 50px">[ 지도 영역 — 아임웹 지도 위젯 삽입 ]</div>
+<div style="max-width:760px;margin:20px 0 10px;border:1px solid rgba(53,66,42,.18)">
+<iframe src="https://maps.google.com/maps?q=%EC%A0%84%EB%82%A8%20%EC%8B%A0%EC%95%88%EA%B5%B0%20%EC%8B%A0%EC%9D%98%EB%A9%B4%20%EC%95%88%EC%82%B0%EA%B8%B8%20100-15&z=12&output=embed" style="width:100%;height:300px;border:0;display:block" loading="lazy" title="협회 위치 지도"></iframe>
+</div>
+<p style="font-size:.85rem;margin:0 0 50px"><a class="textlink" href="https://map.kakao.com/link/search/%EC%8B%A0%EC%95%88%EA%B5%B0%20%EC%8B%A0%EC%9D%98%EB%A9%B4%20%EC%95%88%EC%82%B0%EA%B8%B8%20100-15" target="_blank" rel="noopener">카카오맵에서 길찾기 →</a></p>
 <h2>문의하기</h2>
 <div class="form">
 <label>이름</label><input type="text" placeholder="성함을 입력해 주세요">
