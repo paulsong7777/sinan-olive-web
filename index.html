@@ -103,8 +103,26 @@
 <h3>사회적협동조합 신안올리브협회<br>창립총회 개최 공고</h3>
 <dl><dt>일시</dt><dd>2026. 8. 29.(토) 오후 2시</dd><dt>장소</dt><dd>전라남도 목포시 연산백련로1번길 112-1, 1층</dd><dt>안건</dt><dd>정관 확정 · 사업계획 및 예산 확정 · 임원 선출 · 설립 경비 등</dd></dl>
 <p style="font-size:.86rem;color:#4C5342;margin-bottom:14px">설립에 참여하실 분은 빠짐없이 참여해 주시기 바랍니다.<br><span style="color:#8A9179;font-size:.78rem">2026. 8. 18. 발기인 대표 김태헌</span></p>
-<div class="foot"><label><input type="checkbox"> 오늘 하루 보지 않기</label><button onclick="document.getElementById('popup').classList.add('hidden')">닫기</button></div>
-</div></div><nav><div class="wrap nav-in"><a class="logo" href="index.html">신안올리브협회<small>SINAN OLIVE ASSOCIATION</small></a><button class="ham" aria-label="메뉴 열기" onclick="document.querySelector('.menu').classList.toggle('open')">&#9776;</button><div class="menu"><a href="about.html">협회소개</a><a href="people.html">함께하는 사람들</a><a href="resource.html">자료실</a><a href="notice.html">공지사항</a><a href="story.html">올리브이야기</a><a href="contact.html">Contacts</a></div></div></nav>
+<div class="foot"><label><input type="checkbox" id="popup-today"> 오늘 하루 보지 않기</label><button id="popup-close">닫기</button></div>
+</div></div><script>
+(function(){
+  var el=document.getElementById('popup');
+  if(!el)return;
+  /* 만료: 2026-08-29 18:00 KST (창립총회 종료) 이후 팝업 자체 미노출 */
+  var END=Date.UTC(2026,7,29,9,0,0);
+  var KEY='sinanolive.popup.hideUntil';
+  function hide(){el.classList.add('hidden');}
+  function today(){var d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
+  if(Date.now()>=END){hide();return;}
+  try{if(localStorage.getItem(KEY)===today()){hide();return;}}catch(e){}
+  var box=document.getElementById('popup-today');
+  var btn=document.getElementById('popup-close');
+  btn.addEventListener('click',function(){
+    if(box&&box.checked){try{localStorage.setItem(KEY,today());}catch(e){}}
+    hide();
+  });
+})();
+</script><nav><div class="wrap nav-in"><a class="logo" href="index.html">신안올리브협회<small>SINAN OLIVE ASSOCIATION</small></a><button class="ham" aria-label="메뉴 열기" onclick="document.querySelector('.menu').classList.toggle('open')">&#9776;</button><div class="menu"><a href="about.html">협회소개</a><a href="people.html">함께하는 사람들</a><a href="resource.html">자료실</a><a href="notice.html">공지사항</a><a href="story.html">올리브이야기</a><a href="contact.html">Contacts</a></div></div></nav>
 
 <header class="hero"><svg class="branch" viewBox="0 0 400 300" fill="none" stroke="#F5F3E8" stroke-width="2" aria-hidden="true"><path d="M20 280 Q120 200 200 150 T380 40" stroke-width="3"/><path d="M120 212 q-30 -34 -14 -62 q34 10 14 62z"/><path d="M170 178 q6 -46 36 -56 q12 34 -36 56z"/><path d="M240 132 q-28 -30 -14 -58 q32 10 14 58z"/><path d="M290 104 q6 -42 34 -52 q10 32 -34 52z"/><ellipse cx="205" cy="165" rx="13" ry="16" fill="#F5F3E8" opacity=".7"/><ellipse cx="330" cy="80" rx="12" ry="15" fill="#F5F3E8" opacity=".55"/></svg>
 <div class="wrap hero-in">
