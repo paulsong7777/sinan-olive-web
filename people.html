@@ -103,17 +103,32 @@
 <div class="pagehead"><div class="wrap"><div class="sec-label">PEOPLE</div><h1>함께하는 사람들</h1></div></div>
 <section><div class="wrap">
 <h2>조직도</h2>
-<div style="max-width:640px;text-align:center;font-family:'Gowun Batang',serif">
-<div style="background:#35422A;color:#EFEFE2;padding:14px">조합원 총회</div>
-<div style="width:2px;height:16px;background:#8E9C7C;margin:0 auto"></div>
-<div style="background:#4A5A38;color:#EFEFE2;padding:12px">대의원회</div>
-<div style="width:2px;height:16px;background:#8E9C7C;margin:0 auto"></div>
-<div style="display:flex;gap:14px;justify-content:center">
-<div style="flex:1;background:#fff;border:1px solid rgba(53,66,42,.2);padding:12px">이사회</div>
-<div style="flex:1;background:#fff;border:1px solid rgba(53,66,42,.2);padding:12px">감사</div>
-</div>
-<div style="width:2px;height:16px;background:#8E9C7C;margin:0 auto"></div>
-<div style="background:#fff;border:1px solid rgba(53,66,42,.2);padding:12px">사무국</div>
+<style>
+.orgchart{display:grid;grid-template-columns:300px 160px;column-gap:56px;justify-content:center;align-items:center;max-width:640px;margin:0 auto;text-align:center;font-family:'Gowun Batang',serif}
+.orgchart .oc-box{grid-column:1;padding:12px;background:#fff;border:1px solid rgba(53,66,42,.2)}
+.orgchart .oc-top{background:#35422A;color:#EFEFE2;padding:14px;border:none}
+.orgchart .oc-mid{background:#4A5A38;color:#EFEFE2;border:none}
+.orgchart .oc-link{grid-column:1;width:2px;height:16px;background:#8E9C7C;margin:0 auto}
+.orgchart .oc-board{position:relative}
+.orgchart .oc-board::after{content:'';position:absolute;top:50%;left:100%;width:56px;height:2px;margin-top:-1px;background:#8E9C7C}
+.orgchart .oc-audit{grid-column:2}
+@media(max-width:820px){
+  .orgchart{grid-template-columns:1fr;column-gap:0}
+  .orgchart .oc-box,.orgchart .oc-link,.orgchart .oc-audit{grid-column:1}
+  .orgchart .oc-board::after{display:none}
+  .orgchart .oc-audit{margin-top:16px;position:relative}
+  .orgchart .oc-audit::before{content:'';position:absolute;left:50%;top:-16px;width:2px;height:16px;margin-left:-1px;background:#8E9C7C}
+}
+</style>
+<div class="orgchart">
+<div class="oc-box oc-top">조합원 총회</div>
+<div class="oc-link"></div>
+<div class="oc-box oc-mid">대의원회</div>
+<div class="oc-link"></div>
+<div class="oc-box oc-board">이사회</div>
+<div class="oc-box oc-audit">감사</div>
+<div class="oc-link"></div>
+<div class="oc-box">사무국</div>
 </div>
 <h2 style="margin-top:44px">임원진</h2>
 <div class="list" style="max-width:820px">
