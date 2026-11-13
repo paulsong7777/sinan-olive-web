@@ -90,6 +90,11 @@
   .hero h1 .gold{color:#E3C87A}
   .hero p{margin-top:24px;max-width:34em;color:#DFE3D0}
   .branch{position:absolute;right:-40px;bottom:-30px;width:min(52vw,540px);opacity:.14;z-index:1}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center}
+  .hero-video{position:relative;aspect-ratio:16/9;background:#1B2114;border:1px solid rgba(245,243,232,.22)}
+  .hero-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  @media(max-width:820px){.hero-grid{grid-template-columns:1fr;gap:30px}}
+  @media(min-width:821px){.hero-grid h1{font-size:clamp(1.9rem,3.2vw,2.4rem);word-break:keep-all}}
   .cardimg{width:calc(100% + 48px);margin:-28px -24px 16px;height:170px;object-fit:cover;display:block}
   .photoband{position:relative;margin-top:0}
   .photoband img{width:100%;height:min(56vw,440px);object-fit:cover;display:block}
@@ -125,12 +130,14 @@
 </script><nav><div class="wrap nav-in"><a class="logo" href="index.html">신안올리브협회<small>SINAN OLIVE ASSOCIATION</small></a><button class="ham" aria-label="메뉴 열기" onclick="document.querySelector('.menu').classList.toggle('open')">&#9776;</button><div class="menu"><a href="about.html">협회소개</a><a href="people.html">함께하는 사람들</a><a href="resource.html">자료실</a><a href="notice.html">공지사항</a><a href="story.html">올리브이야기</a><a href="contact.html">Contacts</a></div></div></nav>
 
 <header class="hero"><svg class="branch" viewBox="0 0 400 300" fill="none" stroke="#F5F3E8" stroke-width="2" aria-hidden="true"><path d="M20 280 Q120 200 200 150 T380 40" stroke-width="3"/><path d="M120 212 q-30 -34 -14 -62 q34 10 14 62z"/><path d="M170 178 q6 -46 36 -56 q12 34 -36 56z"/><path d="M240 132 q-28 -30 -14 -58 q32 10 14 58z"/><path d="M290 104 q6 -42 34 -52 q10 32 -34 52z"/><ellipse cx="205" cy="165" rx="13" ry="16" fill="#F5F3E8" opacity=".7"/><ellipse cx="330" cy="80" rx="12" ry="15" fill="#F5F3E8" opacity=".55"/></svg>
-<div class="wrap hero-in">
+<div class="wrap hero-in"><div class="hero-grid"><div>
 <div class="eyebrow">1004개의 섬, 천사의 섬 신안에서</div>
 <h1>신의 선물,<br><span class="gold">천사의 선물</span> — 신안 올리브</h1>
 <p>사회적협동조합 신안올리브협회는 신안의 햇살과 바닷바람이 키운 올리브로, 지역 주민과 함께 지속가능한 올리브 농산업의 내일을 가꿉니다.</p>
 <a class="cta" href="press1.html">창립총회 결과 보기</a>
-</div></header>
+</div>
+<div class="hero-video"><iframe src="https://www.youtube-nocookie.com/embed/bMG8j8HpmEg?autoplay=1&amp;mute=1&amp;playsinline=1&amp;loop=1&amp;playlist=bMG8j8HpmEg&amp;rel=0" title="신안올리브협회 영상" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+</div></div></header>
 <section><div class="wrap">
 <div class="sec-label">ABOUT US</div><h2>협회가 하는 일</h2>
 <div class="cards">
